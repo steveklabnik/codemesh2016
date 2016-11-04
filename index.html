@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exploring Ruby through Rust: CodeMesh 2016</title>
+    <meta charset="utf-8">
+    <link href="styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: center, middle
+
+# Exploring Ruby through Rust
+# 🔴💎🗺⚙🦀
+by [@steveklabnik](https://twitter.com/steveklabnik)
+
+---
+class: middle
+
+# ✋ Hold on!
+
+We're gonna talk about a lot of different stuff.
+
+---
+# ⚙🦀 Rust 
+
+* I really love Rust 💖
+* It's cool if you don't 🙅🏾
+* This talk is about Rust, and Ruby, and C. And having fun. 😎
+
+---
+# ⚙🦀 Rust 
+
+* Apps
+* Libraries
+* Languages
+* Operating Systems (intermezzOS)
+
+---
+# ⚙🦀 Rust 
+
+* Apps
+* Libraries
+* Languages
+* Operating Systems (intermezzOS)
+* Hardware (?)
+* Physics (?)
+
+---
+# ⚙🦀 Rust 
+
+* `String#blank?`
+
+```ruby
+/\A[[:space:]]*\z/ === "Привет"
+```
+
+* `chars.rs`
+
+---
+
+# Why?
+
+Let's talk about Ruby internals.
+
+* `include/ruby/ruby.h`
+* `RObject`
+* `RBasic`
+* `VALUE`
+
+---
+class: middle
+
+# What happens when we `blank?` in Ruby?
+
+* `mem.rb`
+
+---
+
+# Let's talk about Rust!
+
+* char 🔤
+* no GC 🗑
+* optimizations ⚡
+* stack vs heap allocation 📚
+
+---
+class: middle
+
+# Let's talk about C and Ruby!
+
+* [fast blank](https://github.com/SamSaffron/fast_blank)
+* cexts &amp; FFI
+
+---
+class: middle
+
+# Rust + Gems
+
+.sub[(actually Python but you get it 🐍)]
+
+.bump[![sentry blog post](blog.png)]
+
+---
+
+# Rust + Gems
+
+.sub[(actually Python but you get it 🐍)]
+
+![python speed improvement](python.png)
+
+---
+
+# Rust + Gems
+
+.sub[(actually Python but you get it 🐍)]
+
+![whole site averages](avg.png)
+
+---
+
+# Let's do something silly
+#😜😜😜
+
+I told you this talk wasn't about serious stuff.
+But I've been so serious.
+
+---
+class: center, middle
+
+# <blink><strong>ANNOUNCING STEVE"S FORK OF RUBY</strong></blink>
+
+# 🎉🎉🎉
+---
+class: middle, center
+
+# <blink><strong>ANNOUNCING STEVE"S FORK OF RUBY</strong></blink>
+
+# 🍴🍴🍴
+
+---
+class: middle
+
+class: center, middle
+
+# <blink><strong>ANNOUNCING STEVE"S FORK OF RUBY</strong></blink>
+
+([It has four commits](https://github.com/ruby/ruby/compare/trunk...steveklabnik:rust))
+
+---
+class: middle
+
+class: center, middle
+
+# THANK YOU
+
+Go forth, do fun stuff, enjoy computers
+
+#❤️❤️❤️
+
+    </textarea>
+    <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>
